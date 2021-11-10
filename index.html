@@ -30,7 +30,7 @@
           <span class="web">Web</span>Studio</a>
 
         <ul class="site-nav list">
-          <li class="item"><a href="" class="item-link current">Студия</a></li>
+          <li class="item"><a href="" class="item-link nav-link-item current">Студия</a></li>
           <li class="item">
             <a href="./portfolio.html" class="item-link">Портфолио</a>
           </li>
@@ -60,7 +60,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br/>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="button-primary">Заказать услугу</button>
+        <button type="button" class="button-primary" data-modal-open>Заказать услугу</button>
       </section>
 
       <section class="section">
@@ -419,9 +419,9 @@
           </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="modal-btn">
+      <button type="button" class="modal-btn" data-modal-close>
         <svg class="modal-close-icon" width="11" height="11">
           <use href="./images/sprite.svg#icon-close">
           </use>
@@ -430,4 +430,5 @@
     </div>
     </div>
   </body>
+  <script src="./js/modal.js"></script>
 </html>
